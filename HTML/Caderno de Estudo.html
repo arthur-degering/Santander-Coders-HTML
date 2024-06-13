@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de estudos de HTML 5</title>
+</head>
+<body>
+    <p><h1>Barra de Navegação</h1></p>
+    <ul>
+        <li><a href="C:\Santander Coders\HTML\Portifólio.html">Home</a></li>
+        
+        <br>
+
+        <li><a href="C:\Santander Coders\HTML\Caderno de Estudo.html">Caderno de Estudos</a></li>
+    
+        <br>
+    
+        <li><a href="C:\Santander Coders\HTML\Tabelas.html">Tabela</a></li>
+    
+        <br>
+        
+        <li> <a href="C:\Santander Coders\HTML\Semântica.html">Semântica</a></li>
+    
+        <br>
+        
+        <li><a href="C:\Santander Coders\HTML\Integrando HTML e CSS.html">HTML e CSS</a></li>
+
+        <br>
+
+        <li><a href="C:\Santander Coders\HTML\Formulários.html">Formulário</a></li>
+    
+        <br> 
+    </ul>
+
+
+    <h1> Estrutura básica do arquivo html</h1>
+<p> Todas as tags devem ser abertas por < tag> e fechadas < /tag>, ignorando os espaços.</p>
+
+<p>1) A ordem de tags para criar uma página é: html; head, que contem o title; body. Toda tag deve ser fechada.</p>
+
+<p>2) A tag html define os atributos do site, como linguagem, que se define pela tag "lang=sigla da lingua" como pt-br</p>
+
+<p>3) "Head" é o cabeçalho da página. Dentro desta tag, é necessário incluir o título com a tag "title"
+<br>Há também as tags "META", definidas pela documentação <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN</a>
+<br>
+<br>Viewport é a área de renderização do "body" </p>
+<p>4) "Body" é a tag que compõe a página em si de forma genérica. Cada parágrafo é definido com a tag "p" dentro da "viewport"</p>
+<hr>
+<!-- Isso aqui é a estrutuda de um comentário, ou usar crtl ;, que não aparecem no site -->
+<h2> Agora vamos tratar das principais tags HTML </h2>
+<p>1) Os títulos dentro do site são identificados em < h1>, indo de 1 a 6, diminuinto respectivamente de tamanho.</p>
+<p>2) Definir parágrafo ocorre com a tag < p> e quebra de linha ocorre com < br> <br> 
+Para criar uma separação em linha horizontal, é preciso usar a tag < hr>.</p>
+<p>3) Para criar um link, como foi feito para apontar as tags metas, é necessário utilizar a tag < a href="link do site">texto para ser o hiperlink < /a>. Ao clickar no link, vai abrir o link na mesma página <br>
+Para abrir o link em outra aba, a tag é < a href="link do site" target="_blank">texto para ser o hiperlink < /a> <br>
+    <a href="https://copilot.microsoft.com/">Vamos usar o Copilot como exemplo!</a></p>
+<p><a href="https://copilot.microsoft.com/" target="_blank">Vamos usar o Copilot como exemplo, mas para abrir uma nova aba!</a> </p>
+<hr>
+<h1> Imagens </h1>
+
+<p> Imagens é a única tag que não precisa fechar. Ela tem 2 atributos: source ("src") e Descrição Alternativa ("alt") </p>
+<br> A tag é < img src="link" alt="descrição">, é possivel mudar o tamanho da imagem com os atributos "width" (largura) e height (altura). Se colocar apenas width, a altura será ajustada proporcionalmente.
+<img src="C:\Santander Coders\HTML\imagens\microsoft-copilot-01-edited-1536x863.jpg" alt="logo do microsoft copilot, a IA da Microsoft" width="400" height="">
+<br>Para a width, é possivel colocar o valor numérico em pixels ou em %; a fonte da imagem pode ser um link da internet.
+
+<h1>Listas Numeradas</h1>
+
+<p> A lista não numerada usa duas tags: "ol" (ordered list) que indica o inicio de uma lista, e "li" (list item), que aponta cada item da lista com uma bolinha </p>
+
+<ol>
+<li>Primeiro item</li>
+<li>Segundo item</li>
+<li>Terceiro item</li>
+</ol>
+
+<h1>Listas Não Numeradas</h1>
+
+<p> A lista não numerada usa duas tags: "ul" (unordered list) que indica o inicio de uma lista, e "li" (list item), que aponta cada item da lista com uma bolinha. </p>
+
+<ul> <li> Primeiro item</li>
+<li> Segundo item</li>
+<Li> Terceirto item</Li>
+</ul>
+<hr>
+<h1> Tags De Uso Genérico</h1>
+
+<p>Estas tags não alteram diretamente o documento. depende de algum fator externo, como codificação em CSS. Podem ser as tags "span", que mantem a linha (chamado de inline) e "div", que não mantem inline.
+    
+</p>
+
+<p>
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span> <div>Mollitia rerum quos cumque quia perspiciatis error reprehenderit neque et, quidem, veritatis maxime ut eveniet nihil esse, non similique earum saepe. Aperiam!</div>
+</p>
+<hr>
+<h1> Tags de Formatação de texto</h1>
+
+<p>Negrito é representado pela tag < b>, que é apenas um destaque visual. <br>
+Há também a tag < strong>, que aponta que aquele trecho é importante para máquinas de pesquisa. <br>
+Para Italico, o comando é < I>, sendo apenas efeito visual.
+Para dar enfase, o comando é < em>, que também é importante para pesquisas. <br>
+Sublinhado se verifica com a tag < u>, mas não se recomenda usar por ser uma tag antiga; o recomendado é usar CSSbr <br>
+Para riscar um texto, utiliza-se a tag < s> <br>
+Para grifar o texto, a tag adequada é < mark> <br></p>
+
+<p> <mark> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> <i>Veritatis <s>nemo</s> eos et sequi dolorum libero voluptas aut</i>, nam, quaerat soluta pariatur tempora autem odit eum explicabo, numquam iusto <strong>voluptatem</strong> <u>veniam</u></mark>!</p>
+
+<pre>
+É possivel verificar um pesto pré formatado
+com a tag < pre>, mantendo a fomatação
+c o n f o r m e  f o i  e s c r i t o
+</pre>
+
+<p> Como é possivel verificar, a variavel <code>mantendo</code> pode ser destacada como código usando a tag < code>
+<br>
+
+<blockquote> "Para fazer uma citação, a tag adequada é < blockquote>, enquanto subscrito é <sub> a tag < sub></sub> e sobreescrito é <sup> a tag < sup> </sup> </blockquote>
+</p>
+<hr>
+<h1>Elementos Semânticos do HTML5</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Semânticos do HTML5</title>
+</head>
+
+<p> A seguir, vamos apresentar uma sequencia de linhas com as tags respectivas de forma que valorize a semântica. <br>
+Semântica seria o valor de pesquisa em motores como a Google
+
+</p>
+
+< body><br>
+    < header> <br>
+        Header seria cabeçalho<br>
+        < nav> nav seria barra de navegação</ nav> <br>
+    </ header> <br>
+
+    < main><br>
+        Aqui fica o conteúdo principal da página<br>
+
+        < Section id="parte 1"></ Section><br>
+        pode incluir todas as semanticas novamente<br>
+
+        < Section id="parte 2"></ Section><br>
+        < figure> < img src="C:\Santander Coders\HTML\imagens\microsoft-copilot-01-edited-1536x863.jpg" alt="imagem" width="400"><br>
+        < figcaption> Imagem < /figcaption><br>
+
+        < /figure><br>
+
+        < Section id="parte 3"></ Section><br>
+        < Section id="parte 4"></ Section><br>
+
+    </ main><br>
+< aside><br>
+    Barra lateral - que pode ficar dentro ou fora do "main"<br>
+</ aside><br>
+    < footer><br>
+        Aqui jás o rodapé<br>
+    < /footer><br>
+
+
+< /body><br>
+< /html><br>
